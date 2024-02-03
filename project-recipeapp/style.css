@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255 238 230);
+}
+.box{
+    width: 28%;
+    min-height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.topbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#input{
+    width: 11em;
+    height: 2em;
+    font-weight: 500;
+    padding-left: 2px;
+    border: 1px solid black;
+    outline: none;
+}
+#btn{
+    background-color: rgb(37 37 37);
+    color: white;
+    width: 7em;
+    height: 1.9em;
+    border-radius: 3px;
+    outline: none;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: rgb(54, 50, 50);
+}
+.imgbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+}
+.imgbar img{
+    width: 95%;
+    height: 11em;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.miniinfo{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-evenly;
+    padding-bottom: 6px;
+}
+#category, #origin{
+    border: 2px solid black;
+    background-color: rgb(255 238 230);
+    color: black;
+    font-size: 1.1em;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 3px;
+}
+#maininfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+.lastbtn{
+    width: 80%;
+}
+#ytvdo{
+    background-color: rgb(37 37 37);
+    color: white;
+    width: 100%;
+    height: 1.9em;
+    border-radius: 3px;
+    outline: none;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+#ytvdo:hover{
+    background-color: rgb(54, 50, 50);
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+@media only screen and (max-width: 900px) {
+    .box{
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 500px){
+    .topbar{
+        flex-direction: column;
+    }
+    .details{
+        width: 100%;
+    }
+    .miniinfo{
+        flex-direction: column;
+        width: 100%;
+    }
+}
